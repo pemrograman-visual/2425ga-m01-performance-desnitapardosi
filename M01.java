@@ -9,7 +9,7 @@ public class M01 {
     public static void main(String[] args) {
         double performance;
         double nilaiangka, a, aB, b, bC, c, d, e;
-        double totalkredit;
+        int totalkredit;
         String jenishuruf, kredit;
 
         totalkredit = 0;

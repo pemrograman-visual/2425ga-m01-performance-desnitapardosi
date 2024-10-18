@@ -4,16 +4,16 @@
         <attribute name="name" value="nita"/>
         <attribute name="authors" value="ACER"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-10-18 11:36:15 AM"/>
+        <attribute name="saved" value="2024-10-18 11:41:35 AM"/>
         <attribute name="created" value="QUNFUjtMQVBUT1AtR1UwSUNSUFU7MjAyNC0xMC0xODsxMDoxMToxNiBBTTsyNjQw"/>
-        <attribute name="edited" value="QUNFUjtMQVBUT1AtR1UwSUNSUFU7MjAyNC0xMC0xODsxMTozNjoxNSBBTTs3OzI3NjE="/>
+        <attribute name="edited" value="QUNFUjtMQVBUT1AtR1UwSUNSUFU7MjAyNC0xMC0xODsxMTo0MTozNSBBTTs5OzI3NjE="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <declare name="performance" type="Real" array="False" size=""/>
             <declare name="nilaiangka, A, AB, B, BC, C, D, E" type="Real" array="False" size=""/>
-            <declare name="totalkredit" type="Real" array="False" size=""/>
+            <declare name="totalkredit" type="Integer" array="False" size=""/>
             <declare name="jenishuruf, kredit" type="String" array="False" size=""/>
             <assign variable="totalkredit" expression="0"/>
             <assign variable="A" expression="4.0"/>
