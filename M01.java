@@ -9,10 +9,10 @@ public class M01 {
     public static void main(String[] args) {
         double performance;
         double nilaiangka, a, aB, b, bC, c, d, e;
-        int totalkredit;
+        double kredit1;
         String jenishuruf, kredit;
 
-        totalkredit = 0;
+        kredit1 = 0;
         a = 4.0;
         aB = 3.5;
         b = 3.0;
@@ -24,7 +24,7 @@ public class M01 {
         if (kredit.equals("---")) {
             kredit = kredit;
         } else {
-            totalkredit = Integer.parseDouble(kredit);
+            kredit1 = Integer.parseDouble(kredit);
         }
         jenishuruf = input.nextLine();
         while (!jenishuruf.equals("---")) {
@@ -57,13 +57,13 @@ public class M01 {
                     }
                 }
             }
-            performance = totalkredit * nilaiangka;
+            performance = kredit1 * nilaiangka;
             System.out.println(toFixed(performance,1));
             kredit = input.nextLine();
             if (kredit.equals("---")) {
                 kredit = kredit;
             } else {
-                totalkredit = Integer.parseDouble(kredit);
+                kredit1 = Integer.parseDouble(kredit);
             }
             jenishuruf = input.nextLine();
         }

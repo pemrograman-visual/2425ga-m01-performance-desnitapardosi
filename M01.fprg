@@ -4,18 +4,18 @@
         <attribute name="name" value="nita"/>
         <attribute name="authors" value="ACER"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-10-18 11:41:35 AM"/>
+        <attribute name="saved" value="2024-10-18 11:46:04 AM"/>
         <attribute name="created" value="QUNFUjtMQVBUT1AtR1UwSUNSUFU7MjAyNC0xMC0xODsxMDoxMToxNiBBTTsyNjQw"/>
-        <attribute name="edited" value="QUNFUjtMQVBUT1AtR1UwSUNSUFU7MjAyNC0xMC0xODsxMTo0MTozNSBBTTs5OzI3NjE="/>
+        <attribute name="edited" value="QUNFUjtMQVBUT1AtR1UwSUNSUFU7MjAyNC0xMC0xODsxMTo0NjowNCBBTTsxMDsyODAy"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <declare name="performance" type="Real" array="False" size=""/>
             <declare name="nilaiangka, A, AB, B, BC, C, D, E" type="Real" array="False" size=""/>
-            <declare name="totalkredit" type="Integer" array="False" size=""/>
+            <declare name="kredit1" type="Real" array="False" size=""/>
             <declare name="jenishuruf, kredit" type="String" array="False" size=""/>
-            <assign variable="totalkredit" expression="0"/>
+            <assign variable="kredit1" expression="0"/>
             <assign variable="A" expression="4.0"/>
             <assign variable="AB" expression="3.5"/>
             <assign variable="B" expression="3.0"/>
@@ -29,7 +29,7 @@
                     <assign variable="kredit" expression="kredit"/>
                 </then>
                 <else>
-                    <assign variable="totalkredit" expression="toReal(kredit)"/>
+                    <assign variable="kredit1" expression="toReal(kredit)"/>
                 </else>
             </if>
             <input variable="jenishuruf"/>
@@ -84,7 +84,7 @@
                         </if>
                     </else>
                 </if>
-                <assign variable="performance" expression="(totalkredit*nilaiangka)"/>
+                <assign variable="performance" expression="(kredit1*nilaiangka)"/>
                 <output expression="tofixed(performance,1)" newline="True"/>
                 <input variable="kredit"/>
                 <if expression="kredit=&quot;---&quot;">
@@ -92,7 +92,7 @@
                         <assign variable="kredit" expression="kredit"/>
                     </then>
                     <else>
-                        <assign variable="totalkredit" expression="toReal(kredit)"/>
+                        <assign variable="kredit1" expression="toReal(kredit)"/>
                     </else>
                 </if>
                 <input variable="jenishuruf"/>
